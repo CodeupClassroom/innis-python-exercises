@@ -1,0 +1,379 @@
+   1: 1 + 1
+2
+   2: 1 + 1
+2
+   3: print(1 + 1)
+   4: x = 1 + 1
+   5: x
+2
+   6: x = print(1 + 1)
+   7: x
+   8: x = 1 + 1
+   9: type(x)
+int
+  10: x = print(1 + 1)
+  11: type(x)
+NoneType
+  12: True
+True
+  13: False
+False
+  14: not True
+False
+  15: not False
+True
+  16: True and True
+True
+  17: False and True
+False
+  18: True and False
+False
+  19: False and False
+False
+  20: True or True
+True
+  21: True or False
+True
+  22: False or True
+True
+  23: False or False
+False
+  24: we_are_virtual = True
+  25: today_is_monday = False
+  26: today_is_tuesday = True
+  27: we_are_virtual or today_is_monday
+True
+  28: today_is_monday or today_is_tuesday
+True
+  29: we_are_virtual and today_is_monday
+False
+  30: not we_are_virtual or today_is_tuesday
+True
+  31: not (we_are_virtual or today_is_tuesday)
+False
+  32: x = 1
+  33: y = 2
+  34: n_students = 22
+  35: week_of_class = 4
+  36: n_students * week_of_class
+88
+  37: x / y
+0.5
+  38: week_of_class ** y
+16
+  39: week_of_class <= 6
+True
+  40: n_students == 21
+False
+  41: x != 4
+True
+  42: n_students * 4 >= week_of_class ** (y + x)
+True
+  43: x = 1
+  44: x = x + 1
+  45: x
+2
+  46: x += 2
+  47: x
+4
+  48: x -= 1
+  49: x
+3
+  50: x *= 4
+  51: x
+12
+  52: x /= 6
+  53: x
+2.0
+  54: "a"
+'a'
+  55: 'b"
+  56: "b"
+'b'
+  57: "a"
+'a'
+  58: "It's a nice day"
+"It's a nice day"
+  59: 'Today is "monday"'
+'Today is "monday"'
+  60: 'today is
+  61:
+"""
+Today
+is
+a
+nice
+day
+"""
+'\nToday\nis\na\nnice\nday\n'
+  62:
+message = """
+Today
+is
+a
+nice
+day
+"""
+  63: print(message)
+  64:
+message = """
+a\ta
+aa\ta
+"""
+  65: print(message)
+  66: "a" + "b"
+'ab'
+  67: "a" + 1
+  68: 1 + 1
+2
+  69: "a" * 3
+'aaa'
+  70: "1" + "2"
+'12'
+  71: "a" + "1"
+'a1'
+  72: cohort = "Innis"
+  73: "Greetings, %s!" % cohort
+'Greetings, Innis!'
+  74: "Greetings, {}!".format(cohort)
+'Greetings, Innis!'
+  75: f"Greetings, {cohort}!"
+'Greetings, Innis!'
+  76: greeting = 'Salutations'
+  77: "%s, %s!" % (greeting, cohort)
+'Salutations, Innis!'
+  78: "{}, {}!".format(greeting, cohort)
+'Salutations, Innis!'
+  79: f"{greeting}, {cohort}!"
+'Salutations, Innis!'
+  80: hours_in_a_class_day = 7
+  81: minutes_in_an_hour = 60
+  82: weeks_in_class = 22
+  83: minutes_in_class = hours_in_a_class_day * minutes_in_an_hour * weeks_in_clas
+  84: minutes_in_class = hours_in_a_class_day * minutes_in_an_hour * weeks_in_class
+  85: minutes_in_class
+9240
+  86: seconds_in_class = minutes_in_class * 60
+  87: ms_in_class = seconds_in_class * 1000
+  88: message = f"We are in class for {ms_in_class:,} milliseconds"
+  89: print(message)
+  90: greeting
+'Salutations'
+  91: cohort
+'Innis'
+  92: message = "{}, {}!".format(greeting, cohort)
+  93: print(message)
+  94: message.lower()
+'salutations, innis!'
+  95: message.upper()
+'SALUTATIONS, INNIS!'
+  96: message
+'Salutations, Innis!'
+  97: "    a    "
+'    a    '
+  98: s = "    a    "
+  99: s.strip()
+'a'
+ 100: s = '     a          b      '
+ 101: s.strip()
+'a          b'
+ 102: s
+'     a          b      '
+ 103: "123".isdigit()
+True
+ 104: "a".isdigit()
+False
+ 105: phone_number = "210-867-5309"
+ 106: phone_number.split("-")
+['210', '867', '5309']
+ 107: "+".join(["a", "b", "c"])
+'a+b+c'
+ 108: "+".join([1, 2, 3])
+ 109: "How many birds did you see?".split(" ")
+['How', 'many', 'birds', 'did', 'you', 'see?']
+ 110: s
+'     a          b      '
+ 111: "innis".capitalize()
+'Innis'
+ 112: days_of_the_week = ["monday", "tuesday", "wednesday", "thursday"]
+ 113: days_of_the_week.append("friday")
+ 114: days_of_the_week
+['monday', 'tuesday', 'wednesday', 'thursday', 'friday']
+ 115: days_of_the_week.pop()
+'friday'
+ 116: days_of_the_week
+['monday', 'tuesday', 'wednesday', 'thursday']
+ 117: days_of_the_week + ["friday"]
+['monday', 'tuesday', 'wednesday', 'thursday', 'friday']
+ 118: days_of_the_week + ["friday", "saturday", "sunday"]
+['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday']
+ 119: days_of_the_week + "friday"
+ 120: days_of_the_week * 3
+['monday',
+ 'tuesday',
+ 'wednesday',
+ 'thursday',
+ 'monday',
+ 'tuesday',
+ 'wednesday',
+ 'thursday',
+ 'monday',
+ 'tuesday',
+ 'wednesday',
+ 'thursday']
+ 121: days_of_the_week + ["friday"]
+['monday', 'tuesday', 'wednesday', 'thursday', 'friday']
+ 122: good_days = ["friday", "saturday", "sunday"]
+ 123: days_of_the_week + good_days
+['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday']
+ 124: weekdays = days_of_the_week + good_days
+ 125: weekdays
+['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday']
+ 126: len(weekdays)
+7
+ 127: weekdays[0]
+'monday'
+ 128: weekdays[1]
+'tuesday'
+ 129: weekdays[6]
+'sunday'
+ 130: weekdays[7]
+ 131: len(weekdays)
+7
+ 132: weekdays
+['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday']
+ 133: weekdays[-1]
+'sunday'
+ 134: weekdays[-3]
+'friday'
+ 135: weekdays[1:4]
+['tuesday', 'wednesday', 'thursday']
+ 136: weekdays[3:]
+['thursday', 'friday', 'saturday', 'sunday']
+ 137: weekdays[:-1]
+['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday']
+ 138: weekdays[2] = "hump day"
+ 139: weekdays
+['monday', 'tuesday', 'hump day', 'thursday', 'friday', 'saturday', 'sunday']
+ 140: weekdays[7] = "blursday"
+ 141: [1, 'b', 123, True]
+[1, 'b', 123, True]
+ 142: some_list = [1, 'b', 123, True, [True, False, False, True]]
+ 143: some_list
+[1, 'b', 123, True, [True, False, False, True]]
+ 144: len(some_list)
+5
+ 145: matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+ 146: matrix
+[[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+ 147: len(matrix)
+3
+ 148: matrix[0]
+[1, 2, 3]
+ 149: matrix[1]
+[4, 5, 6]
+ 150: matrix[1][1]
+5
+ 151: [day for day in weekdays]
+['monday', 'tuesday', 'hump day', 'thursday', 'friday', 'saturday', 'sunday']
+ 152: [day[:2] for day in weekdays]
+['mo', 'tu', 'hu', 'th', 'fr', 'sa', 'su']
+ 153: [zach for zach in weekdays]
+['monday', 'tuesday', 'hump day', 'thursday', 'friday', 'saturday', 'sunday']
+ 154: [12 for day in weekdays]
+[12, 12, 12, 12, 12, 12, 12]
+ 155: [day.upper() for day in weekdays]
+['MONDAY', 'TUESDAY', 'HUMP DAY', 'THURSDAY', 'FRIDAY', 'SATURDAY', 'SUNDAY']
+ 156: ["day" for day in weekdays]
+['day', 'day', 'day', 'day', 'day', 'day', 'day']
+ 157: weekdays
+['monday', 'tuesday', 'hump day', 'thursday', 'friday', 'saturday', 'sunday']
+ 158: [day for day in weekdays if day.startswith("s")]
+['saturday', 'sunday']
+ 159: range(10)
+range(0, 10)
+ 160: list(range(10))
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+ 161: [x for x in range(10)]
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+ 162: [x + 100 for x in range(10)]
+[100, 101, 102, 103, 104, 105, 106, 107, 108, 109]
+ 163: [x for x in range(10) if x % 2 == 0]
+[0, 2, 4, 6, 8]
+ 164: [x + 100 for x in range(10) if x % 2 == 0]
+[100, 102, 104, 106, 108]
+ 165: # write a list comprehension to show all the numbers between 1 and 10 that are either less than 4 or greater than 7 halved
+ 166: # halve each number between 1 and 10 that is less than 4 or greater than 7
+ 167: [x / 2 for x in range(1, 10) if x < 4 or x > 7]
+[0.5, 1.0, 1.5, 4.0, 4.5]
+ 168: [x / 2 for x in range(1, 10) if x < 4 or x > 7]
+[0.5, 1.0, 1.5, 4.0, 4.5]
+ 169: [x / 2 for x in range(1, 10) if x < 4 or x > 7]
+[0.5, 1.0, 1.5, 4.0, 4.5]
+ 170: cohort = {"name": "Innis", "n_students": 22}
+ 171: type(cohort)
+dict
+ 172: cohort
+{'name': 'Innis', 'n_students': 22}
+ 173: cohort["name"]
+'Innis'
+ 174: cohort["is_virtual"] = True
+ 175: cohort
+{'name': 'Innis', 'n_students': 22, 'is_virtual': True}
+ 176: cohort["is_virtual"] = False
+ 177: cohort
+{'name': 'Innis', 'n_students': 22, 'is_virtual': False}
+ 178: "The {} cohort has {} students".format(cohort["name"], cohort["n_struents"])
+ 179: "The {} cohort has {} students".format(cohort["name"], cohort["n_students"])
+'The Innis cohort has 22 students'
+ 180: cohort
+{'name': 'Innis', 'n_students': 22, 'is_virtual': False}
+ 181: cohort["instructor"] = "Zach"
+ 182: cohort
+{'name': 'Innis', 'n_students': 22, 'is_virtual': False, 'instructor': 'Zach'}
+ 183: del cohort["instructor"]
+ 184: cohort
+{'name': 'Innis', 'n_students': 22, 'is_virtual': False}
+ 185: cohort["instructors"] = ["Madeleine", "Zach"]
+ 186: cohort
+{'name': 'Innis',
+ 'n_students': 22,
+ 'is_virtual': False,
+ 'instructors': ['Madeleine', 'Zach']}
+ 187: cohort["instructors"]
+['Madeleine', 'Zach']
+ 188: cohort["instructors"][0]
+'Madeleine'
+ 189: %log -o data_types.log.py
+ 190: %history -o -n -f data_types.log.py
+ 191:
+staff = [
+    {"name": "Zach", "role": "instructor", "language": "clojure"},
+    {"name": "Madeleine", "role": "instructor", "language": "SQL"},
+    {"name": "Zach", "role": "student fellow", "language": "python"},
+]
+ 192:
+staff = [
+    {"name": "Zach", "role": "instructor", "language": "clojure"},
+    {"name": "Madeleine", "role": "instructor", "language": "SQL"},
+    {"name": "Sam", "role": "student fellow", "language": "python"},
+]
+ 193: # student fellow names, favorite language of instructors
+ 194: staff
+[{'name': 'Zach', 'role': 'instructor', 'language': 'clojure'},
+ {'name': 'Madeleine', 'role': 'instructor', 'language': 'SQL'},
+ {'name': 'Sam', 'role': 'student fellow', 'language': 'python'}]
+ 195: [person["name"] for person in staff if person["role"] == "student fellow"]
+['Sam']
+ 196: [person["language"] for person in staff]
+['clojure', 'SQL', 'python']
+ 197: [person["language"] for person in staff if person["role"] == "instructor"]
+['clojure', 'SQL']
+ 198:
+[
+    "{}'s favorite language is {}".format(person["name"], person["language"])
+    for person in staff
+    if person["role"] == "instructor"
+]
+["Zach's favorite language is clojure", "Madeleine's favorite language is SQL"]
+ 199: %history -o -n -f data_types.log
