@@ -24,17 +24,22 @@ print('Hey there!')
 # TODO: take a look at the code snippet below:
 max([1, 2, 3])
 
+max
+
 # What is the function name?
 # Where is the function invocation?
 # What is the return value?
 
 # TODO: What will the output of the following code be? Why? Explain step-by-step
 type(max([1, 2, 3]))
+# -> type(3)
 
 # TODO: What will the output of the following code be? Why?
 type(max)
 
 # What other built-in functions do you know?
+
+pow(2, 3) # same as 2 ** 3
 
 ############################## Defining Functions ##############################
 
@@ -48,25 +53,80 @@ type(max)
 def increment(n):
     return n + 1
 
+increment(3)
+
+increment(increment(3))
+# substitution model of evaluation
+# a function invokation is replaced with it's return value
+
 # TODO: What is the difference between the increment function above and the one below?
 def increment(n):
     print(n + 1)
 
+increment(3)
+
+increment(increment(3))
+
 # TODO: define a function named is_weekend. This function should accept a string and return true if the string is either saturday or sunday, false otherwise.
+def is_weekend(some_day):
+    some_day = some_day.lower()
+    return some_day == 'saturday' or some_day == 'sunday'
 # TODO: test out your is_weekend function with various values.
+is_weekend('friday')
+is_weekend('monday')
+is_weekend('saturday')
+is_weekend('sunday')
 # TODO: Use your is_weekend function in combination with input() and an if statement to prompt the user for a day of the week and tell them whether or not it is a weekend.
+user_input = input('Please enter a weekday: ')
+if is_weekend(user_input):
+    print('It\'s a weekend!')
+else:
+	print('It\'s a weekday.')
 
 # TODO: Create a function named nonzero. It should accept a number and return true if the number is anythong other than zero, false otherwise.
+def nonzero(x):
+    return x != 0
+nonzero(123)
+nonzero(-10)
+nonzero(2 ** 12)
+nonzero(0)
 # TODO: Use your nonzero function in combination with the built-in input function and an if statement to prompt the user for a number and print a message displaying whether or not the number is zero.
+user_input = int(input('Please enter a number: '))
+if nonzero(user_input):
+    print('It is not zero!')
+else:
+    print('It is zero')
 # TODO: Transfer the work you have done into a function named explain_nonzero. Calling this function should prompt the user and display the message as before.
+
+def explain_nonzero():
+    user_input = int(input('Please enter a number: '))
+    if nonzero(user_input):
+        print('It is not zero!')
+    else:
+        print('It is zero')
+
+explain_nonzero()
 
 ## Default Parameter Values and Keyword Arguments ##
 
 # - Positional Argument
 # - Keyword Argument
 
+def add(x, y):
+    return x + y
+
+add(3, 4) # all positional arguments
+add(x=3, y=4) # 2 keyword arguments
+add(y=3, x=4) # order doesn't matter for keword args
+add(3, y=4) # we can mix and match positional and keyword
+add(x=3, 4) # ERROR! positional arguments come first
+
 def sayhello(name="Innis"):
     return f"Hello, {name}!"
+
+sayhello()
+sayhello("Zach")
+sayhello(name="Zach")
 
 # TODO: call the say hello function and don't pass any arguments
 # TODO: call the say hello function and pass your name as a string argument both positionally and as a keyword argument.
